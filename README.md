@@ -1,9 +1,6 @@
 # Website for viewing lists of pokemons
 
-```sh
-npm create astro@latest -- --template basics
-```
-
+This website has been developed by me (Kritika Adhikari). You are free to use the source code but ensure to give me credits. Thank you
 
 
 > **Want to view a preview?** 
