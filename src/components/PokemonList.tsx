@@ -24,9 +24,14 @@ const PokemonList: React.FC = () => {
     getPokemons();
   }, []);
 
-  if (loading) return 
-  <div className="text-white">Loading...</div>;
-
+  if (loading) {
+    return (
+      <div className="flex flex-col items-center justify-center h-screen text-dark text-4xl">
+        <div>Please wait till the information is loading !</div>
+        <img width="64" height="64" src="https://img.icons8.com/fluency/48/pokemon.png" alt="pokemon" />
+      </div>
+    );
+  }
   const filteredPokemons = pokemons.filter((pokemon) =>
     pokemon.name.toLowerCase().includes(search.toLowerCase())
   );
