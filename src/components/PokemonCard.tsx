@@ -26,7 +26,7 @@ const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon }) => {
         const data: PokemonDetails = await response.json();
         setDetails(data);
       } catch (error) {
-        console.error("Error fetching Pokémon details:", error);
+        console.error("Error fetching Pokemon details:", error);
       }
     };
 
